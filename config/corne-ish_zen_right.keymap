@@ -1,8 +1,9 @@
+// vi: ft=c
 /*
-*
-* Copyright (c) 2021 lowprokb.ca
-* SPDX-License-Identifier: MIT
-*
-*/
+ *
+ * Copyright (c) 2021 lowprokb.ca
+ * SPDX-License-Identifier: MIT
+ *
+ */
 
 #include "corne-ish_zen.keymap"
