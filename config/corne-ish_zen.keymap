@@ -19,22 +19,6 @@
 #define SETTINGS 6
 
 / {
-        /* behaviours { */
-        /*         mt: mod_tap { */
-        /*                 compatible = "zmk,behaviour-hold-tap"; */
-        /*                 label = "MOD_TAP"; */
-        /*                 tapping-term-ms = <200>; */
-        /*                 flavor = "hold-preferred"; */
-        /*                 bindings = <&kp>, <&kp>; */
-        /*         }; */
-        /*         lt: layer_tap { */
-        /*                 compatible = "zmk,behaviour-hold-tap"; */
-        /*                 label = "LAYER_TAP"; */
-        /*                 tapping-term-ms = <200>; */
-        /*                 flavor = "hold-preferred"; */
-        /*                 bindings = <&mo>, <&kp>; */
-        /*         }; */
-        /* }; */
         keymap {
                 compatible = "zmk,keymap";
 
