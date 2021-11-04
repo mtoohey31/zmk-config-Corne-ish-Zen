@@ -18,6 +18,14 @@
 #define PLOVER 5
 #define SETTINGS 6
 
+&lt {
+        quick-tap-ms = <200>;
+};
+
+&mt {
+        quick-tap-ms = <200>;
+};
+
 / {
         keymap {
                 compatible = "zmk,keymap";
