@@ -28,15 +28,27 @@
 };
 
 / {
-        behaviors {
-                hm: homerow_mods {
+behaviors {
+                lm: left_hand_positional_hold_tap {
                         compatible = "zmk,behavior-hold-tap";
-                        label = "HOMEROW_MODS";
+                        label = "LEFT_POSITIONAL_HOLD_TAP";
                         #binding-cells = <2>;
-                        tapping-term-ms = <150>;
-                        quick-tap-ms = <0>;
-                        flavor = "tap-preferred";
+                        flavor = "tap-unless-interrupted";
+                        tapping-term-ms = <100>;
+                        quick-tap-ms = <200>;
                         bindings = <&kp>, <&kp>;
+                        hold-trigger-key-positions = <6 7 8 9 10 11>;
+                };
+
+                rm: right_hand_positional_hold_tap {
+                        compatible = "zmk,behavior-hold-tap";
+                        label = "RIGHT_POSITIONAL_HOLD_TAP";
+                        #binding-cells = <2>;
+                        flavor = "tap-unless-interrupted";
+                        tapping-term-ms = <100>;
+                        quick-tap-ms = <200>;
+                        bindings = <&kp>, <&kp>;
+                        hold-trigger-key-positions = <0 1 2 3 4 5>;
                 };
 
                 csemi: colon_semi {
@@ -70,7 +82,7 @@
                         label = "ENGRAM";
                         bindings = <
 &kp MINUS  &kp B      &kp Y      &kp O            &kp U      &kp LBKT     &kp RBKT    &kp L      &kp D      &kp W      &kp V      &kp Z
-&csemi     &hm LSFT C &hm LCTL I &hm LALT E       &hm LGUI A &kp COMMA    &kp DOT     &hm RGUI H &hm RALT T &hm RCTL S &hm RSFT N &kp Q
+&csemi     &lm LSFT C &lm LCTL I &lm LALT E       &lm LGUI A &kp COMMA    &kp DOT     &rm RGUI H &rm RALT T &rm RCTL S &rm RSFT N &kp Q
 &dsquot    &kp G      &kp X      &kp J            &kp K      &kp LPAR     &kp RPAR    &kp R      &kp M      &kp F      &kp P      &boslh
                                 &lt SETTINGS ESC &kp BSPC   &kp DEL      &lt NAV RET &kp SPC      &lt NUM TAB
                         >;
