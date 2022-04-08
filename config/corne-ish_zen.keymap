@@ -94,7 +94,7 @@
 &kp MINUS  &kp B      &kp Y      &kp O            &kp U      &kp LBKT     &kp RBKT    &kp L      &kp D      &kp W      &kp V      &kp Z
 &csemi     &lm LSFT C &lm LCTL I &lm LALT E       &lm LGUI A &kp COMMA    &kp DOT     &rm RGUI H &rm RALT T &rm RCTL S &rm RSFT N &kp Q
 &dsquot    &kp G      &kp X      &kp J            &kp K      &kp LPAR     &kp RPAR    &kp R      &kp M      &kp F      &kp P      &boslh
-                                &lt SETTINGS ESC &kp BSPC   &kp DEL      &lt NAV RET &kp SPC      &lt NUM TAB
+                                 &lt SETTINGS ESC &kp BSPC   &kp DEL      &lt NAV RET &kp SPC    &lt NUM TAB
                         >;
                 };
 
@@ -102,20 +102,20 @@
                 nav_layer {
                         label = "NAV";
                         bindings = <
-&trans &trans &kp HOME &kp PG_UP &kp PG_DN &kp END    &trans   &trans   &trans &trans    &trans &trans
-&trans &trans &trans   &trans    &trans    &trans     &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-&trans &trans &trans   &trans    &trans    &trans     &trans   &trans   &trans &trans    &trans &trans
-                       &trans    &trans    &trans     &trans   &trans   &trans
+&trans &trans &kp HOME &kp PG_UP &kp PG_DN &kp END    &trans   &trans        &trans      &trans         &trans &trans
+&trans &trans &trans   &trans    &trans    &trans     &kp LEFT &rm RGUI DOWN &rm RALT UP &rm RCTL RIGHT &trans &trans
+&trans &trans &trans   &trans    &trans    &trans     &trans   &trans        &trans      &trans         &trans &trans
+                       &trans    &trans    &trans     &trans   &trans        &trans
                         >;
                 };
 
                 num_layer {
                         label = "NUM";
                         bindings = <
-&kp LBKT &kp F1 &kp F2  &kp F3  &kp F4  &kp TILDE    &kp FSLH   &kp N7 &kp N8 &kp N9 &kp MINUS &kp RBKT
-&trans   &kp F5 &kp F6  &kp F7  &kp F8  &kp GRAVE    &kp ASTRK  &kp N4 &kp N5 &kp N6 &kp PLUS  &kp K_APP
-&trans   &kp F9 &kp F10 &kp F11 &kp F12 &kp HASH     &kp PRCNT  &kp N1 &kp N2 &kp N3 &kp EQUAL &trans
-                        &trans  &trans  &trans       &to NUM    &kp N0 &to QWERTY
+&kp LBKT &kp F1      &kp F2       &kp F3       &kp F4      &kp TILDE    &kp FSLH   &kp N7      &kp N8      &kp N9      &kp MINUS      &kp RBKT
+&trans   &lm LSFT F5 &lm LCTL F6  &lm LALT F7  &lm LGUI F8 &kp GRAVE    &kp ASTRK  &rm RGUI N4 &rm RALT N5 &rm RCTL N6 &rm RSFT PLUS  &kp K_APP
+&trans   &kp F9      &kp F10      &kp F11      &kp F12     &kp HASH     &kp PRCNT  &kp N1      &kp N2      &kp N3      &kp EQUAL      &trans
+                                  &trans       &trans      &trans       &to NUM    &kp N0      &to QWERTY
                         >;
                 };
 
