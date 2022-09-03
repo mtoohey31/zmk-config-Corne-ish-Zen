@@ -118,7 +118,6 @@
                         >;
                 };
 
-                // TODO: Add rpcs3 layer
                 fps_layer {
                         label = "FPS";
                         bindings = <
