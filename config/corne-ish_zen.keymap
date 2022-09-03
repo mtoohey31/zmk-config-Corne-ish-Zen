@@ -15,8 +15,7 @@
 #define NUM 3
 #define FPS 4
 #define MOBA 5
-#define PLOVER 6
-#define SETTINGS 7
+#define SETTINGS 6
 
 &lt {
         quick-tap-ms = <200>;
@@ -139,23 +138,12 @@ behaviors {
                         >;
                 };
 
-                // TODO: Make plover toggle macro to send toggle chord on switch
-                plover_layer {
-                        label = "PLOVER";
-                        bindings = <
-&none       &kp Q  &kp W  &kp E  &kp R  &kp T    &kp Y  &kp U  &kp I  &kp O  &kp P    &kp LBKT
-&tog PLOVER &kp A  &kp S  &kp D  &kp F  &kp G    &kp H  &kp J  &kp K  &kp L  &kp SEMI &kp SQT
-&kp N1      &kp N1 &kp N1 &kp N1 &kp N1 &kp N1   &kp N1 &kp N1 &kp N1 &kp N1 &kp N1   &kp N1
-                          &none  &kp C  &kp V    &kp N  &kp M  &none
-                        >;
-                };
-
                 settings_layer {
                         label = "SETTINGS";
                         bindings = <
 &none &to QWERTY &none &to ENGRAM &none      &none       &none &none        &none        &none        &none &none
 &none &none      &none &to ENGRAM &to FPS    &to MOBA    &none &bt BT_SEL 3 &bt BT_SEL 4 &none        &none &to QWERTY
-&none &none      &none &none      &to PLOVER &none       &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none &none
+&none &none      &none &none      &none      &none       &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none &none
                        &none      &none      &bt BT_CLR  &none &none        &none
                         >;
                 };
