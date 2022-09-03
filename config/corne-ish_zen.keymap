@@ -27,28 +27,6 @@
 
 / {
         behaviors {
-                lm: left_hand_positional_hold_tap {
-                        compatible = "zmk,behavior-hold-tap";
-                        label = "LEFT_POSITIONAL_HOLD_TAP";
-                        #binding-cells = <2>;
-                        flavor = "tap-preferred";
-                        tapping-term-ms = <150>;
-                        quick-tap-ms = <200>;
-                        bindings = <&kp>, <&kp>;
-                        hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41>;
-                };
-
-                rm: right_hand_positional_hold_tap {
-                        compatible = "zmk,behavior-hold-tap";
-                        label = "RIGHT_POSITIONAL_HOLD_TAP";
-                        #binding-cells = <2>;
-                        flavor = "tap-preferred";
-                        tapping-term-ms = <150>;
-                        quick-tap-ms = <200>;
-                        bindings = <&kp>, <&kp>;
-                        hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
-                };
-
                 csemi: colon_semi {
                         compatible = "zmk,behavior-mod-morph";
                         label = "COLON_SEMI";
@@ -81,7 +59,7 @@
                         label = "QWERTY";
                         bindings = <
 &kp LPAR          &kp Q &kp W &kp E        &kp R         &kp T        &kp Y       &kp U    &kp I    &kp O   &kp P    &kp RPAR
-&lt SETTINGS BSLH &kp A &kp S &kp D        &kp F         &kp G        &kp H       &kp J    &kp K    &kp L   &kp SEMI &kp SQT
+&lt SETTINGS BSLH &kp A &kp S &kp D        &kp F         &kp G        &kp H       &kp J    &kp K    &kp L   &kp SEMI &lt SETTINGS SQT
 &kp LSHFT         &kp Z &kp X &kp C        &kp V         &kp B        &kp N       &kp M    &kp CMMA &kp DOT &kp FSLH &kp RSFT
                               &mt LALT ESC &mt LGUI BSPC &mt LCTL DEL &lt NAV RET &kp SPC  &lt NUM TAB
                         >;
@@ -90,10 +68,10 @@
                 engram {
                         label = "ENGRAM";
                         bindings = <
-&kp MINUS  &kp B      &kp Y      &kp O            &kp U      &kp LBKT  &kp RBKT    &kp L      &kp D      &kp W      &kp V      &kp Z
-&csemi     &lm LSFT C &lm LCTL I &lm LALT E       &lm LGUI A &kp COMMA &kp DOT     &rm RGUI H &rm RALT T &rm RCTL S &rm RSFT N &kp Q
-&dsquot    &kp G      &kp X      &kp J            &kp K      &kp LPAR  &kp RPAR    &kp R      &kp M      &kp F      &kp P      &boslh
-                                 &lt SETTINGS ESC &kp BSPC   &kp DEL   &lt NAV RET &kp SPC    &lt NUM TAB
+&kp MINUS  &kp B &kp Y &kp O        &kp U         &kp LBKT     &kp RBKT    &kp L   &kp D &kp W &kp V &kp Z
+&csemi     &kp C &kp I &kp E        &kp A         &kp COMMA    &kp DOT     &kp H   &kp T &kp S &kp N &lt SETTINGS Q
+&dsquot    &kp G &kp X &kp J        &kp K         &kp LPAR     &kp RPAR    &kp R   &kp M &kp F &kp P &boslh
+                       &mt LALT ESC &mt LGUI BSPC &mt LCTL DEL &lt NAV RET &kp SPC &lt NUM TAB
                         >;
                 };
 
