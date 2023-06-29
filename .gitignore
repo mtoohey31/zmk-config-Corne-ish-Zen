@@ -1,7 +1,9 @@
+/result
+/.direnv
+
 build/
 zmk/
 zephyr/
 modules/
 tools/
 .west/
-/result
