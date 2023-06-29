@@ -9,13 +9,12 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define ENGRAM 0
-#define QWERTY 1
-#define NAV 2
-#define NUM 3
-#define FPS 4
-#define MOBA 5
-#define SETTINGS 6
+#define QWERTY 0
+#define NAV 1
+#define NUM 2
+#define FPS 3
+#define MOBA 4
+#define SETTINGS 5
 
 &lt {
         quick-tap-ms = <200>;
@@ -30,16 +29,6 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-                        label = "ENGRAM";
-                        bindings = <
-&kp FSLH          &kp B &kp Y &kp O        &kp U         &kp LPAR     &kp RPAR    &kp L   &kp D &kp W &kp V &kp Z
-&lt SETTINGS BSLH &kp C &kp I &kp E        &kp A         &kp CMMA     &kp DOT     &kp H   &kp T &kp S &kp N &kp Q
-&kp LSHFT         &kp G &kp X &kp J        &kp K         &kp SQT      &kp SEMI    &kp R   &kp M &kp F &kp P &kp RSFT
-                              &mt LALT ESC &mt LGUI BSPC &mt LCTL DEL &lt NAV RET &kp SPC &lt NUM TAB
-                        >;
-                };
-
-                qwerty {
                         label = "QWERTY";
                         bindings = <
 &kp LPAR          &kp Q &kp W &kp E        &kp R         &kp T        &kp Y       &kp U    &kp I    &kp O   &kp P    &kp RPAR
@@ -93,10 +82,10 @@
                 settings_layer {
                         label = "SETTINGS";
                         bindings = <
-&none &to QWERTY &none &to ENGRAM &none   &none      &none &none        &none        &none        &none &none
-&none &none      &none &to ENGRAM &to FPS &to MOBA   &none &bt BT_SEL 3 &bt BT_SEL 4 &none        &none &to QWERTY
-&none &none      &none &none      &none   &none      &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none &none
-                       &none      &none   &bt BT_CLR &none &none        &none
+&none &none &none &none &none   &none      &none &none        &none        &none        &none &none
+&none &none &none &none &to FPS &to MOBA   &none &bt BT_SEL 3 &bt BT_SEL 4 &none        &none &none
+&none &none &none &none &none   &none      &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none &none
+                  &none &none   &bt BT_CLR &none &none        &none
                         >;
                 };
         };
