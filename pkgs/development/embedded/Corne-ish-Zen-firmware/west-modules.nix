@@ -116,7 +116,6 @@
     path = "modules/hal/quicklogic";
     rev = "b3a66fe6d04d87fd1533a5c8de51d0599fcd08d0";
     sha256 = "XpPROaiZN0KRxQCtEOYaXSEBtxAo+atnH1ytOMXpYUI=";
-    # repo-path: hal_quicklogic
   }
   {
     repo = "hal_renesas";
@@ -153,7 +152,6 @@
     path = "modules/hal/telink";
     rev = "38573af589173259801ae6c2b34b7d4c9e626746";
     sha256 = "ioHMx0rpbRppxAoT5yLcIHgLhoO9vyuas9YwaOEyvtQ=";
-    # submodules: true
   }
   {
     repo = "hal_ti";
@@ -281,7 +279,6 @@
     path = "modules/lib/tflite-micro";
     rev = "9156d050927012da87079064db59d07f03b8baf6";
     sha256 = "Aa5mFsGFc3c7F7GleL0QfB5XBl1ihYGsGIDCnEPBP98=";
-    # repo-path: tflite-micro
   }
   {
     repo = "tinycbor";
