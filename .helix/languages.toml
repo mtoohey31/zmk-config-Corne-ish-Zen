@@ -1,4 +1,4 @@
 [[language]]
-name = "c"
-file-types = ["c", "keymap"]
+name = "devicetree"
+file-types = ["dts", "overlay", "keymap", "dtsi"]
 indent = { tab-width = 8, unit = "        " }
